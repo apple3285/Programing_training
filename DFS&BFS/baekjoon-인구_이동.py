@@ -1,5 +1,6 @@
 #백준 16234번 - 인구 이동
 #80%에서 시간 초과 수정 필요
+#무한 루프 확인해보기 시간 많이 쓰이는 부분 확인해보기 반례보고 풀어보기
 from collections import deque
 N, L, R = map(int,input().split())
 g = []
@@ -7,11 +8,6 @@ g = []
 for _ in range(N):
     row = list(map(int, input().split()))
     g.append(row)
-
-
-
-    
-
 
 def bfs(root,check):
     q = deque([root])
@@ -35,8 +31,6 @@ def bfs(root,check):
                 bound_sum += g[pos_x][pos_y]
                 change_check.append(1)
 
-    #print(check)
-    #print(same_bound)
     each_bound = int(bound_sum/len(same_bound))
     for bound in same_bound:
         g[bound[0]][bound[1]] = each_bound
@@ -64,8 +58,3 @@ while (1):
     #print(cnt)
     
 print(cnt)
-
-
-
-    
-
