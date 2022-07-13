@@ -1,7 +1,7 @@
-#백준 - N과 M (1)
+# 백준 - N과 M (1)
 # 백트래킹 : 모든 경우의 수를 탐색하는 대신 조건을 걸어서 유망(promising)하지 않은 경우에는 탐색을 중지하고 이전 노드로 돌아가서 다른 경우를 탐색한다.
 # 이미 방문한 경우라면 제외하면서 M개를 고른 경우 출력
-
+# https://velog.io/@yusuk6185/%EB%B0%B1%EC%A4%80-15649-N%EA%B3%BC-M-1-%ED%8C%8C%EC%9D%B4%EC%8D%AC-with-%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9
 n,m = list(map(int,input().split()))
  
 stack = []
