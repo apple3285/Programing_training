@@ -1,3 +1,5 @@
+#백준 - 문자열
+#답지보고 공부(https://yoonsang-it.tistory.com/55)
 word1, word2 = input().split()
 
 answer = []
