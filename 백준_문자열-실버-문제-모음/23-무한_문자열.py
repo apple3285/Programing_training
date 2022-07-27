@@ -1,4 +1,4 @@
-import collections
+
 s = input()
 t = input()
 
