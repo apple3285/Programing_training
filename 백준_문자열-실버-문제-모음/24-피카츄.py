@@ -5,7 +5,6 @@ pikachu = pikachu.replace("pi",".")
 pikachu = pikachu.replace("ka",".")
 pikachu = pikachu.replace("chu",".")
 pikachu = pikachu.replace(".","")
-print(pikachu)
 if len(pikachu) == 0:
     print("Yes")
 else:
