@@ -1,34 +1,27 @@
 #백준 - 비슷한 단어
-#다른 코드 공부 (출처 : https://fre2-dom.tistory.com/406)
-import sys
-
-
-n = int(sys.stdin.readline())
-temp = [[] for _ in range(101)]
-dic = [{} for i in range(101)]
-cnt = 0
-
-# 반복문을 통해 단어를 확인
+#다른 코드 공부 (출처 : https://jeonnew.tistory.com/118)
+n = int(input())
+inp = []
+word = []
 for i in range(n):
-    num = 0
-    m = str(sys.stdin.readline()).rstrip('\n')
+    inp.append(input())     # 'dog'
+    
+word = [sorted(list(inp[i])) for i in range(n)] #  [['d','g','o'], ... ]
+find = [len(inp[i]) if len(inp[i]) >= len(word[0]) else len(word[0]) for i in range(n)]
+# 첫번째 단어보다 긴 경우는 그 길이 만큼, 짧은 경우는 첫번째 단어 길이 만큼 배열 생성
 
-    # 반복문을 통해 알파벳을 확인하고
-    # 그 알파벳을 수와 같이 딕셔너리형으로 추가한다.
-    for j in m:
-        if j not in dic[i]:
-            dic[i][j] = str(num)
-            num += 1
+for i in range(1,n):
+    for j in range(len(word[0])):      # ['d', 'g', 'o']
+        for k in range(len(word[i])):    # ['d', 'g', 'o']
+            if word[i][k] == word[0][j]:  # 글자 비교해서 같으면 find -= 1
+                find[i] -= 1
+                word[i][k] = ' '     # 글자 지움
+                break
 
-        # 현재 확인한 알파벳을 temp에 추가한다.
-        temp[i] += dic[i][j]
-
-# 반복문을 통해 같은 단어라면 카운트한다.
-for i in range(n):
-    for j in range(i + 1, n):
-        if temp[i] == temp[j]:
-            cnt += 1
-
+cnt = 0            
+for i in range(1,n):
+    if find[i] <= 1:    # 1더하거나, 1빼거나, 1수정, 모든 문자 같은 경우 cnt += 1
+        cnt += 1
 print(cnt)
 
 
