@@ -58,7 +58,9 @@ print(result)
 
 
 #플로이드 워셜 알고리즘을 사용한 풀이 (https://github.com/ndb796/python-for-coding-test/blob/master/17/2.py )
+#설명이 잘된 블로그 : https://blex.me/@mildsalmon/chap-17-%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C-q38-%EC%A0%95%ED%99%95%ED%95%9C-%EC%88%9C%EC%9C%84
 #플로이드 워셜 설명 ( https://freedeveloper.tistory.com/385?category=888096)
+
 '''
 INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
 
