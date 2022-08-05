@@ -1,4 +1,3 @@
-
 '''
 <문제>
 당신은 화성 탐사 기계를 개발하는 프로그래머다. 
@@ -93,3 +92,34 @@ for tc in range(int(input())):
                   heapq.heappush(q, (cost, nx, ny))
 
     print(distance[n - 1][n - 1])
+
+
+#실패한 코드
+#bfs 로 풀면 그리디하게 풀어야하는데 결과가 항상 최단 거리라고 장담할 수 없음
+# from collections import deque
+# import sys
+# input = sys.stdin.readline
+# dx = [-1, 0, 1, 0]
+# dy = [0, 1, 0, -1]
+# for test in range(int(input())):
+#     # 노드의 개수를 입력받기
+#     n = int(input())
+
+#     # 전체 맵 정보를 입력받기
+#     graph = []
+    
+#     for i in range(n):
+#         graph.append(list(map(int, input().split())))
+#     dist = [[0]*n for  i in range(n)]
+#     print(graph)
+#     print(dist)
+#     q = deque([[0,0]])
+#     visited=[[0,0]]]
+#     while q:
+#         now = q.popleft()
+#         now_x,now_y = now[0],now[1]
+#         for i in range(4):
+#             pos_x = now_x + dx[i]
+#             pos_y = now_y + dy[i]
+#             if 0<=pos_x<n and 0<= pos_y <n and [pos_x,pos_y] not in visited:
+            
