@@ -29,7 +29,7 @@ print(result)
 # 실패한 코드 - A의 리스트 앞에서 부터 단어가 있다면 S에서 삭제해주는 방법 
 # softwarecontest - [soft , software, contest] 인 경우 실패하게 됨
 # import sys
-
+ㅓ
 # S = sys.stdin.readline().rstrip()
 # N = int(sys.stdin.readline())
 # A = [sys.stdin.readline().rstrip() for i in range(N)]
