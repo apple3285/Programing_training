@@ -1,3 +1,10 @@
+# 다른 예제는 맞지만 다음 예제에서 틀림 
+# 코드 수정 필요
+#
+#1 5
+#antatica
+#
+#
 N, K = map(int,input().split())
 start = 'anta'
 end = 'tica'
