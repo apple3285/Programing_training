@@ -1,3 +1,4 @@
+#2차 시도- 트라이 알고리즘 적용
 import sys
 import collections
 class TrieNode:
