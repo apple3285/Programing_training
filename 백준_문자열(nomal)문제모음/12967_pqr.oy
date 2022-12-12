@@ -1,0 +1,23 @@
+#메모리 초과
+# 공부한 블로그 : 아직도 모르겠음 https://thekeykim.github.io/posts/BOJ_12967/
+# import sys
+# import itertools
+
+# input = sys.stdin.readline
+
+
+# N_K = list(map(int, input().split()))
+
+# N,K = N_K[0],N_K[1]
+# result = 0
+
+# A = sorted(list(map(int,input().split())))
+# combination_lst = list(itertools.combinations(A,3))
+# print(A)
+
+
+# for c in combination_lst:
+#     if c[0]*c[1]*c[2] % K == 0:
+#         result +=1
+        
+# print(result)
